@@ -1,0 +1,87 @@
+{
+  
+  "itineraries": [
+    {
+      "start_time": "2014-12-04T21:50:00-06:00",
+      "end_time": "2014-12-04T22:04:00-06:00",
+      "travel_time": 14,
+      "legs": [
+        {
+          "type": "Walk",
+          "walk": {
+            "begin": {
+              "lat": 40.112097,
+              "lon": -88.231254,
+              "name": "40.112097, -88.231254",
+              "time": "2014-12-04T21:50:00-06:00"
+            },
+            "direction": "South",
+            "distance": 0.18,
+            "end": {
+              "lat": 40.110249,
+              "lon": -88.230544,
+              "name": "Green & Sixth (SW Corner)",
+              "stop_id": "GRN6TH:3",
+              "time": "2014-12-04T21:53:00-06:00"
+            }
+          }
+        },
+        {
+          "services": [
+            {
+              "begin": {
+                "lat": 40.110249,
+                "lon": -88.230544,
+                "name": "Green & Sixth (SW Corner)",
+                "stop_id": "GRN6TH:3",
+                "time": "2014-12-04T21:58:00-06:00"
+              },
+              "end": {
+                "lat": 40.110394,
+                "lon": -88.225811,
+                "name": "Green & Mathews (SW Corner)",
+                "stop_id": "GRNMAT:3",
+                "time": "2014-12-04T21:59:00-06:00"
+              },
+              "route": {
+                "route_color": "008063",
+                "route_id": "GREEN EVENING",
+                "route_long_name": "Green Evening",
+                "route_short_name": "50",
+                "route_text_color": "ffffff"
+              },
+              "trip": {
+                "trip_id": "[@7.0.41201218@][3][1243953754500]\/6__GNX5MF",
+                "trip_headsign": "EAST - ORCHARD DOWNS",
+                "route_id": "GREEN EVENING",
+                "block_id": "GNX5MF",
+                "direction": "East",
+                "service_id": "GNX5MF",
+                "shape_id": "GREEN EVENING 52"
+              }
+            }
+          ],
+          "type": "Service"
+        },
+        {
+          "type": "Walk",
+          "walk": {
+            "begin": {
+              "lat": 40.110394,
+              "lon": -88.225811,
+              "name": "Green & Mathews (SW Corner)",
+              "stop_id": "GRNMAT:3",
+              "time": "2014-12-04T21:59:00-06:00"
+            },
+            "direction": "North",
+            "distance": 0.28,
+            "end": {
+              "lat": 40.113945,
+              "lon": -88.225105,
+              "name": "40.1139451, -88.2251045",
+              "time": "2014-12-04T22:04:00-06:00"
+            }
+          }
+        }
+      ]
+    },

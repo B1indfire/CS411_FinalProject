@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" href="stuff.css">
+</head>
+
+
+	
+
+	<body background="images/calander.jpg">
+	
+	<a href="http://schedulizer.web.engr.illinois.edu/current_assignments.php"><img src="images/blue_button.png" style=" position:absolute;
+   								margin-left:auto;
+  								margin-right:auto;
+  								left:92%;
+  								right:0%;
+   								top:1%;
+   								height:40px;
+   								width:150px;
+   								"></a>
+   								
+   								
+   								
+   	<div style="
+  		  text-transform: uppercase;
+   		 font-weight:bold;
+   		 padding:1px;
+  		  text-align:center;
+  		  color:white;
+   		 font-size:15px;
+  		  position:absolute;
+  		  margin-left:auto;
+  		  margin-right:auto;
+  		  left:92%;
+  		  right:0;
+  		  top:2.3%;
+ 		   pointer-events:none;"> 
+	
+	
+	go back
+	
+	</div>
+	
+	<img src="images/red_button.png" border = "0" style=" position:absolute;
+   								margin-left:auto;
+  								margin-right:auto;
+  								left:0%;
+  								right:0;
+   								top:6%;
+   								height:130px;
+   								width:800px;
+   								">
+   								
+   								
+   								
+   	<div style="
+  		  text-transform: uppercase;
+   		 font-weight:bold;
+   		 padding:1px;
+  		  text-align:center;
+   		 font-size:45px;
+  		  position:absolute;
+  		  margin-left:auto;
+  		  margin-right:auto;
+  		  left:0;
+  		  right:0;
+  		  top:10%;
+ 		   pointer-events:none;"> 
+  	
+  	Add an Assignment
+  	
+  	
+  	</div>
+	
+	
+ 	 <div class="content" style="position: absolute; margin-left:auto; margin-right:auto; top: 35%; left: 0%; right:0; width:25%; height:28%; background-color: #60aa65; text-align:center; padding: 5px; border:2px solid; border-radius: 25px" >
+		
+		<form action="insert_assignment.php" method="post">
+		
+		<br>Assignment Name: <br><input type="text" name="p_name"><br>
+		Assignment Due Date: <br><input type="date" name="p_date"><br>
+		Class:<br> <input type="text" name="p_class"<br> <br>
+		
+		<input type="submit">
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,104 @@
+ <html>
+<head>
+<link rel="stylesheet" href="stuff.css">
+</head>
+
+	<body>
+		<p>Insert some bros</p>
+		<form action="insert_ppl.php" method="post">
+			Type a unique username if you:<br>
+			Name: <select type="text" name="p_name">
+		<option value="" style="color:#A9A9A9;">Select a Name</option>
+
+			
+				
+<?php
+$con=mysqli_connect("engr-cpanel-mysql.engr.illinois.edu","scheduli_d","12345", "scheduli_data");
+
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$sql = "SELECT name FROM tab_people";
+$result = mysqli_query($con, $sql);
+
+echo "<select name='name'>";
+while ($row = mysqli_fetch_array($result))
+{
+    echo "<option value=" . $row['name'] . ">" . $row['name'] . "</option>";
+}
+echo "</select>";
+?>
+
+
+
+
+				
+			Type: <input type="text" name="p_type"><br>
+			Street: <input type="text" name="p_street"><br>
+            		City: <input type="text" name="p_city"><br>
+			State: <select id="state" name="p_state">
+        			<option value="" style="color:#A9A9A9;">Select a State</option>
+	                	<option value="AL" class="optionSelect">Alabama</option>
+		                <option value="AK" class="optionSelect">Alaska</option>
+	        	        <option value="AZ" class="optionSelect">Arizona</option>
+	                	<option value="AR" class="optionSelect">Arkansas</option>
+	                	<option value="CA" class="optionSelect">California</option>
+		                <option value="CO" class="optionSelect">Colorado</option>
+		                <option value="CT" class="optionSelect">Connecticut</option>
+		                <option value="DE" class="optionSelect">Delaware</option>
+		                <option value="DC" class="optionSelect">District of Columbia</option>
+		                <option value="FL" class="optionSelect">Florida</option>
+		                <option value="GA" class="optionSelect">Georgia</option>
+		                <option value="HI" class="optionSelect">Hawaii</option>
+		                <option value="ID" class="optionSelect">Idaho</option>
+		                <option value="IL" class="optionSelect">Illinois</option>
+		                <option value="IN" class="optionSelect">Indiana</option>
+		                <option value="IA" class="optionSelect">Iowa</option>
+		                <option value="KS" class="optionSelect">Kansas</option>
+		                <option value="KY" class="optionSelect">Kentucky</option>
+		                <option value="LA" class="optionSelect">Louisiana</option>
+		                <option value="ME" class="optionSelect">Maine</option>
+		                <option value="MD" class="optionSelect">Maryland</option>
+		                <option value="MA" class="optionSelect">Massachusetts</option>
+		                <option value="MI" class="optionSelect">Michigan</option>
+		                <option value="MN" class="optionSelect">Minnesota</option>
+		                <option value="MS" class="optionSelect">Mississippi</option>
+		                <option value="MO" class="optionSelect">Missouri</option>
+		                <option value="MT" class="optionSelect">Montana</option>
+		                <option value="NE" class="optionSelect">Nebraska</option>
+		                <option value="NV" class="optionSelect">Nevada</option>
+		                <option value="NH" class="optionSelect">New Hampshire</option>
+		                <option value="NJ" class="optionSelect">New Jersey</option>
+		                <option value="NM" class="optionSelect">New Mexico</option>
+		                <option value="NY" class="optionSelect">New York</option>
+		                <option value="NC" class="optionSelect">North Carolina</option>
+		                <option value="ND" class="optionSelect">North Dakota</option>
+		                <option value="OH" class="optionSelect">Ohio</option>
+		                <option value="OK" class="optionSelect">Oklahoma</option>
+		                <option value="OR" class="optionSelect">Oregon</option>
+		                <option value="PA" class="optionSelect">Pennsylvania</option>
+		                <option value="RI" class="optionSelect">Rhode Island</option>
+		                <option value="SC" class="optionSelect">South Carolina</option>
+		                <option value="SD" class="optionSelect">South Dakota</option>
+		                <option value="TN" class="optionSelect">Tennessee</option>
+		                <option value="TX" class="optionSelect">Texas</option>
+		                <option value="UT" class="optionSelect">Utah</option>
+		                <option value="VT" class="optionSelect">Vermont</option>
+		                <option value="VA" class="optionSelect">Virginia</option>
+		                <option value="WA" class="optionSelect">Washington</option>
+		                <option value="WV" class="optionSelect">West Virginia</option>
+		                <option value="WI" class="optionSelect">Wisconsin</option>
+		                <option value="WY" class="optionSelect">Wyoming</option>
+              
+            		</select><br>
+			Zip Code: <input type="number" name="p_zipcode"><br>
+			Phone: <input type="tel" name="p_phone"><br>
+			Email: <input type="email" name="p_email"><br>
+			<input type="submit">
+		</form>
+		
+
+	</body>
+</html>

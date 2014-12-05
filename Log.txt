@@ -1,0 +1,35 @@
+DEMO DONE
+User Table:
+	table made
+	find username
+	delete by username
+	list all users by username
+	Create new user
+	modify user
+	
+Event Table:
+	add an event
+	view event
+	
+Things to do:
+	!!!!login menu!!!!
+	decide how to differentiate b/t users and people
+	Make user dashboard
+		-should only be able to modify
+			Own events
+			Own data
+		-Should be able to find public events
+		-Should be able to view a week''s schedule
+		-Should be able to create events
+		-Should be able to add things to their own schedule
+			-events
+			-delete their events
+			-classes
+				-first lead to a page to check if class exists
+				-check to see if professor exists
+				-Could make it a full table display with checkboxes
+	Differentiate b/t private and public events
+	
+Possible things to do:
+	add admin menu
+	

@@ -1,0 +1,35 @@
+/*<?php
+
+$con=mysqli_connect("engr-cpanel-mysql.engr.illinois.edu","scheduli_d","12345","scheduli_data");
+// Check connection
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$username = mysqli_real_escape_string($con, $_POST['username']);
+$password = mysqli_real_escape_string($con, $_POST['password']);
+
+$fail_url = "http://schedulizer.web.engr.illinois.edu/index.html";
+$succ_url = "http://schedulizer.web.engr.illinois.edu/main_menu.html";
+
+$query = 
+"SELECT * 
+FROM tab_people 
+WHERE username = '$username' AND password = '$password'";
+$result_tab = mysqli_query($con,$query);
+
+if(!$result_tab){ 
+	header("Location: $fail_url");
+}
+
+else {
+	if (mysqli_num_rows($result_tab) == 1) {
+		header("Location: $succ_url");
+	} 
+	else {
+		header("Location: $fail_url");
+	}
+}
+
+mysqli_close($con);
+?>*/
